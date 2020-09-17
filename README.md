@@ -49,7 +49,7 @@ more information.
 [documentation]: https://goodhands.github.io/comments-sdk/
 [contributing]: https://github.com/goodhands/comments-sdk/blob/master/.github/CONTRIBUTING.md
 
-[badge-source]: http://img.shields.io/badge/source-goodhands/microapi--comments--sdk-blue.svg?style=flat-square
+[badge-source]: https://img.shields.io/badge/source-goodhands%2Fcomments--sdk-blue.svg?style=flat-square
 [badge-release]: https://img.shields.io/packagist/v/goodhands/comments-sdk.svg?style=flat-square&label=release
 [badge-license]: https://img.shields.io/packagist/l/goodhands/comments-sdk.svg?style=flat-square
 [badge-php]: https://img.shields.io/packagist/php-v/goodhands/comments-sdk.svg?style=flat-square
