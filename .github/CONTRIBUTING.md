@@ -10,7 +10,7 @@ this project and its community, you are expected to uphold this code.
 
 You can find help and discussion in the following places:
 
-* GitHub Issues: <https://github.com/goodhands/microapi-comments-sdk/issues>
+* GitHub Issues: <https://github.com/goodhands/comments-sdk/issues>
 
 
 ## Reporting Bugs
@@ -54,11 +54,11 @@ When you do begin working on your feature, here are some guidelines to consider:
   I will use this description to update the CHANGELOG. If there is no
   description or it does not adequately describe your feature, I will ask you
   to update the description.
-* goodhands/microapi-comments-sdk follows the **[PSR-12 coding standard][psr-12]**. Please
+* goodhands/comments-sdk follows the **[PSR-12 coding standard][psr-12]**. Please
   ensure your code does, too.
 * Please **write tests** for any new features you add.
 * Please **ensure that tests pass** before submitting your pull request.
-  goodhands/microapi-comments-sdk has Travis CI automatically running tests for pull requests.
+  goodhands/comments-sdk has Travis CI automatically running tests for pull requests.
   However, running the tests locally will help save time.
 * **Use topic/feature branches.** Please do not ask to pull from your master
   branch.
@@ -86,10 +86,10 @@ composer run test
 ```
 
 
-[github]: https://github.com/goodhands/microapi-comments-sdk
-[contributor code of conduct]: https://github.com/goodhands/microapi-comments-sdk/blob/master/.github/CODE_OF_CONDUCT.md
-[issues]: https://github.com/goodhands/microapi-comments-sdk/issues
-[pull requests]: https://github.com/goodhands/microapi-comments-sdk/pulls
+[github]: https://github.com/goodhands/comments-sdk
+[contributor code of conduct]: https://github.com/goodhands/comments-sdk/blob/master/.github/CODE_OF_CONDUCT.md
+[issues]: https://github.com/goodhands/comments-sdk/issues
+[pull requests]: https://github.com/goodhands/comments-sdk/pulls
 [psr-12]: https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md
 [gh-flow]: https://guides.github.com/introduction/flow/
 [git-commit]: https://chris.beams.io/posts/git-commit/

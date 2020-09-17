@@ -1,5 +1,5 @@
 {
-    "name": "goodhands\microapi\comments\sdk",
+    "name": "goodhands\comments-sdk",
     "description": "A simple PHP library to use the comments microservice at https://comments.microapi.dev",
     "type": "library",
     "keywords": ["comments", "sdk", "php", "api", "library"],

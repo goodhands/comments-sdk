@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the goodhands/microapi-comments-sdk library
+ * This file is part of the goodhands/comments-sdk library
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -15,7 +15,7 @@ declare(strict_types=1);
 namespace Goodhands\Comments;
 
 /**
- * A general exception for goodhands/microapi-comments-sdk.
+ * A general exception for goodhands/comments-sdk.
  */
 class Commentsxception extends \RuntimeException
 {
