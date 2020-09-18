@@ -15,20 +15,10 @@ declare(strict_types=1);
 namespace Goodhands\Comments;
 
 /**
- * A simple PHP library to use the comments microservice at https://comments.microapi.dev
+ * Class Replies
+ * @package Goodhands\Comments
+ * Handle all replies to comments actions
  */
-class Comments
-{
-    /**
-     * Returns a simple and friendly message.
-     *
-     * @return string
-     */
-    public function getHello(): string
-    {
-        return 'Hello, World!';
-    }
-}
+class Replies extends Comments{
 
-$comment = new Comments();
-echo $comment->getHello();
+}
