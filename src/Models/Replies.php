@@ -12,13 +12,17 @@
 
 declare(strict_types=1);
 
-namespace Goodhands\Comments;
+namespace Goodhands\Comments\Models;
 
 /**
  * Class Replies
  * @package Goodhands\Comments
  * Handle all replies to comments actions
  */
-class Replies extends Comments{
-
+class Replies
+{
+    public function get(): string
+    {
+        return "Hey there!";
+    }
 }

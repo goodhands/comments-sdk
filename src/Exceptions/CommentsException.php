@@ -12,11 +12,11 @@
 
 declare(strict_types=1);
 
-namespace Goodhands\Comments;
+namespace Goodhands\Comments\Exceptions;
 
 /**
  * A general exception for goodhands/comments-sdk.
  */
-class Commentsxception extends \RuntimeException
+class CommentsException extends \RuntimeException
 {
 }

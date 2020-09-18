@@ -29,6 +29,3 @@ class Comments
         return 'Hello, World!';
     }
 }
-
-$comment = new Comments();
-echo $comment->getHello();
