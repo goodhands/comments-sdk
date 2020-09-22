@@ -2,13 +2,18 @@
 
 namespace Goodhands\Comments\Test\Stubs;
 
+/**
+ * Trait Comment
+ * @package Goodhands\Comments\Test\Stubs
+ * @link https://github.com/goodhands/comments-sdk/blob/master/tests/Stubs/Comment.php
+ */
 trait Comment
 {
     /**
      * Provide a stub payload for creating
      * a new comment
      * @return array
-     * @link https://github.com/goodhands/comment-sdk/tree/master/Comment.php
+     * @link https://github.com/goodhands/comments-sdk/blob/master/tests/Stubs/Comment.php#L16
      */
     public function createCommentPayload(): array
     {
@@ -28,16 +33,50 @@ trait Comment
     public function createCommentResponse(): object
     {
         $response = new \stdClass();
+        $response->status = "success";
+
+        $response->data = new \stdClass();
+
+        $response->data->commentId = uniqid();
+        $response->data->refId = uniqid();
+        $response->data->ownerId = "user-2";
+        $response->data->content = "I couldn't have done this without you";
+        $response->data->origin = "posts-21";
+        $response->data->numOfVotes = 0;
+        $response->data->numOfUpVotes = 0;
+        $response->data->numOfDownVotes = 0;
+        $response->data->numOfFlags = 0;
+        $response->data->numOfReplies = 0;
+        $response->data->createdAt = time();
+        $response->data->updatedAt = time();
+
+        return $response;
+    }
+
+    public function getAllCommentsPayload(): array {
+        return [
+            "isFlagged" => false,
+            "refId" => "",
+            "ownerId" => "",
+            "origin" => "posts-21",
+            "limit" => "",
+            "sort" => "",
+            "page" => ""
+        ];
+    }
+
+    public function getAllCommentsResponse(): object {
+        $response = new \stdClass();
 
         $response->message = "I couldn't have done this without you";
         $response->status = "success";
 
         $response->data->records = array(
-            "commentId" => "string",
-            "refId" => "string",
-            "ownerId" => "string",
-            "content" => "string",
-            "origin" => "string",
+            "commentId" => uniqid(),
+            "refId" => uniqid(),
+            "ownerId" => "user-4",
+            "content" => "I couldn't have done this without you",
+            "origin" => "posts-24",
             "numOfVotes" => 0,
             "numOfUpVotes" => 0,
             "numOfDownVotes" => 0,
@@ -57,6 +96,17 @@ trait Comment
             "pageRecordCount" => 0,
             "totalRecord" => 0
         );
+
+        return $response;
+    }
+
+    public function getSingleCommentPayload(): string {
+        return '5f66576ad02a34001bb8af0b';
+    }
+
+    public function getSingleCommentResponse(): object {
+        $response = $this->createCommentResponse();
+        $response->message = "Comment Retrieved Successfully";
 
         return $response;
     }

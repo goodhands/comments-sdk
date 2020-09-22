@@ -33,7 +33,7 @@ class CommentsTest extends TestCase
             ->andReturnSelf();
 
         $this->comments->shouldReceive('getResponse')
-            ->andReturn($this->createCommentPayload());
+            ->andReturn($this->createCommentResponse());
 
         $result = $this->comments->create($this->createCommentPayload())->getResponse();
 
@@ -43,16 +43,16 @@ class CommentsTest extends TestCase
         $this->assertObjectHasAttribute('origin', $result);
     }
 
-    public function testFetchComments()
+    public function testFetchAllComments()
     {
         $this->comments->shouldReceive('fetch')
-            ->with($this->createCommentPayload())
+            ->with($this->getAllCommentsPayload())
             ->andReturnSelf();
 
         $this->comments->shouldReceive('getResponse')
-            ->andReturn($this->createCommentResponse());
+            ->andReturn($this->getAllCommentsResponse());
 
-        $result = $this->comments->create($this->createCommentPayload())->getResponse();
+        $result = $this->comments->create($this->getAllCommentsPayload())->getResponse();
 
         $this->assertObjectHasAttribute('status', $result);
         $this->assertSame('success', $result->status);
@@ -71,6 +71,9 @@ class CommentsTest extends TestCase
         $this->comments->shouldReceive('getResponse')
             ->andReturn($this->getSingleCommentResponse());
 
+        $result = $this->comments->single($this->getSingleCommentPayload())->getResponse();
 
+        $this->assertObjectHasAttribute('message', $result);
+        $this->assertObjectHasAttribute('status', $result);
     }
 }
