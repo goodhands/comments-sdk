@@ -28,19 +28,19 @@ class CommentsTest extends TestCase
 
     public function testCreateComment()
     {
-        $this->comments->shouldReceive('create')
+        $this->comments->shouldReceive('postComment')
             ->with($this->createCommentPayload())
             ->andReturnSelf();
 
         $this->comments->shouldReceive('getResponse')
             ->andReturn($this->createCommentResponse());
 
-        $result = $this->comments->create($this->createCommentPayload())->getResponse();
+        $result = $this->comments->postComment($this->createCommentPayload())->getResponse();
 
-        $this->assertObjectHasAttribute('refId', $result);
-        $this->assertObjectHasAttribute('ownerId', $result);
-        $this->assertObjectHasAttribute('content', $result);
-        $this->assertObjectHasAttribute('origin', $result);
+        $this->assertObjectHasAttribute('refId', $result->data);
+        $this->assertObjectHasAttribute('ownerId', $result->data);
+        $this->assertObjectHasAttribute('content', $result->data);
+        $this->assertObjectHasAttribute('origin', $result->data);
     }
 
     public function testFetchAllComments()
@@ -52,7 +52,7 @@ class CommentsTest extends TestCase
         $this->comments->shouldReceive('getResponse')
             ->andReturn($this->getAllCommentsResponse());
 
-        $result = $this->comments->create($this->getAllCommentsPayload())->getResponse();
+        $result = $this->comments->fetch($this->getAllCommentsPayload())->getResponse();
 
         $this->assertObjectHasAttribute('status', $result);
         $this->assertSame('success', $result->status);
