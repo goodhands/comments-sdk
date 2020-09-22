@@ -19,6 +19,8 @@ namespace Goodhands\Comments;
  */
 class Comments
 {
+    const BASE_URL = "https://comment.microapi.dev/v1/";
+
     /**
      * Returns a simple and friendly message.
      *
