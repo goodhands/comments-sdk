@@ -36,19 +36,27 @@ class CommentsTest extends TestCase
 
     public function testCreateComment()
     {
-        $this->comments->shouldReceive('postComment')
+        $this->comments->shouldReceive('create')
             ->with($this->createCommentPayload())
             ->andReturnSelf();
 
         $this->comments->shouldReceive('getResponse')
             ->andReturn($this->createCommentResponse());
 
-        $result = $this->comments->postComment($this->createCommentPayload())->getResponse();
+        $result = $this->comments->create($this->createCommentPayload())->getResponse();
 
         $this->assertObjectHasAttribute('refId', $result->data);
         $this->assertObjectHasAttribute('ownerId', $result->data);
         $this->assertObjectHasAttribute('content', $result->data);
         $this->assertObjectHasAttribute('origin', $result->data);
+    }
+
+    public function testCreateCommentWithoutPayload()
+    {
+        $this->comments->shouldReceive('create')
+            ->andReturnSelf();
+
+
     }
 
     public function testFetchAllComments()

@@ -14,20 +14,51 @@ declare(strict_types=1);
 
 namespace Goodhands\Comments;
 
+use Goodhands\Comments\Exceptions\CommentsException;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
+
 /**
  * A simple PHP library to use the comments microservice at https://comments.microapi.dev
  */
 class Comments
 {
-    const BASE_URL = "https://comment.microapi.dev/v1/";
+    private const BASE_URL = "https://comment.microapi.dev/v1/";
+
+    private Client $http;
+
+    public function __construct($ACCESS_TOKEN)
+    {
+        $this->http = new Client([
+            'base_uri' => self::BASE_URL,
+            'headers' => [
+                'Authorization' => 'Bearer ' . $ACCESS_TOKEN
+            ]
+        ]);
+    }
 
     /**
-     * Returns a simple and friendly message.
-     *
-     * @return string
+     * Create a new comment resource
+     * @param Array $payload
+     * @throws GuzzleException
+     * @return Comments
      */
-    public function getHello(): string
+    public function create($payload)
     {
-        return 'Hello, World!';
+        if (!in_array(['refId', 'ownerId', 'content', 'origin'], $payload)) {
+            throw new CommentsException("Required arguments for payload are refId, ownerId, content, origin");
+        }
+
+        try {
+            $request = $this->http->post('/comments', [
+                "body" => [
+                    json_encode($payload)
+                ]
+            ]);
+
+            return $this;
+        } catch (GuzzleException $ge) {
+            throw $ge;
+        }
     }
 }
