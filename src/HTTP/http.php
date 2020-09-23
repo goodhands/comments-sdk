@@ -29,7 +29,7 @@ class Http
     }
 
     /**
-     * Create a post request to the given URI
+     * Create a post request to the given endpoint
      * @param $uri
      * @param $payload
      * @return ResponseInterface
@@ -39,6 +39,38 @@ class Http
     {
         try {
             return $this->http->post($uri, $payload);
+        } catch (GuzzleException $e) {
+            throw $e;
+        }
+    }
+
+    /**
+     * Create a get request to the given endpoint
+     * @param $uri
+     * @param $payload
+     * @return ResponseInterface
+     * @throws GuzzleException
+     */
+    public function get($uri, $payload)
+    {
+        try {
+            return $this->http->get($uri, $payload);
+        } catch (GuzzleException $e) {
+            throw $e;
+        }
+    }
+
+    /**
+     * Create a patch request to the given endpoint
+     * @param $uri
+     * @param $payload
+     * @return ResponseInterface
+     * @throws GuzzleException
+     */
+    public function patch($uri, $payload)
+    {
+        try {
+            return $this->http->patch($uri, $payload);
         } catch (GuzzleException $e) {
             throw $e;
         }
