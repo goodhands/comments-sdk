@@ -15,8 +15,6 @@ declare(strict_types=1);
 namespace Goodhands\Comments;
 
 use Goodhands\Comments\Exceptions\CommentsException;
-use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
 
 /**
  * A simple PHP library to use the comments microservice at https://comments.microapi.dev

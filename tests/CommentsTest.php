@@ -16,6 +16,7 @@ namespace Goodhands\Comments\Test;
 
 use Goodhands\Comments\Comments;
 use Goodhands\Comments\Test\Stubs\Comment as CommentsStub;
+use GuzzleHttp\Exception\GuzzleException;
 
 class CommentsTest extends TestCase
 {
