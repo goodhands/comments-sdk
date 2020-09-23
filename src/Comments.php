@@ -27,6 +27,8 @@ class Comments
 
     private Client $http;
 
+    private $response;
+
     public function __construct($ACCESS_TOKEN)
     {
         $this->http = new Client([
@@ -50,7 +52,7 @@ class Comments
         }
 
         try {
-            $request = $this->http->post('/comments', [
+            $this->response = $this->http->post('/comments', [
                 "body" => [
                     json_encode($payload)
                 ]
@@ -60,5 +62,14 @@ class Comments
         } catch (GuzzleException $ge) {
             throw $ge;
         }
+    }
+
+    /**
+     * Get response for all requests
+     * @return mixed $response
+     */
+    public function getResponse()
+    {
+        return json_decode($this->response->getBody());
     }
 }
