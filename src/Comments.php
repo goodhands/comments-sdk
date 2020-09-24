@@ -75,7 +75,7 @@ class Comments
 
     /**
      * Find a single comment with the commentId
-     * @param $commentId
+     * @param string $commentId
      * @return Http
      * @throws GuzzleException
      */

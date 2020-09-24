@@ -31,8 +31,8 @@ class Http
 
     /**
      * Create a post request to the given endpoint
-     * @param $uri
-     * @param $payload
+     * @param string $uri
+     * @param array $payload
      * @throws GuzzleException
      */
     public function post($uri, $payload)
@@ -46,7 +46,7 @@ class Http
 
     /**
      * Create a get request to the given endpoint
-     * @param $uri
+     * @param string $uri
      * @param array $payload
      * @return void
      * @throws GuzzleException
@@ -62,8 +62,8 @@ class Http
 
     /**
      * Create a patch request to the given endpoint
-     * @param $uri
-     * @param $payload
+     * @param string $uri
+     * @param array $payload
      * @throws GuzzleException
      */
     public function patch($uri, $payload)
