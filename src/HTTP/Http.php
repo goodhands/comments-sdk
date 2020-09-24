@@ -22,6 +22,7 @@ class Http
 {
 
     private Client $http;
+    public ResponseInterface $response;
 
     public function __construct($setup)
     {
@@ -32,13 +33,12 @@ class Http
      * Create a post request to the given endpoint
      * @param $uri
      * @param $payload
-     * @return ResponseInterface
      * @throws GuzzleException
      */
     public function post($uri, $payload)
     {
         try {
-            return $this->http->post($uri, $payload);
+            $this->response = $this->http->post($uri, $payload);
         } catch (GuzzleException $e) {
             throw $e;
         }
@@ -47,14 +47,14 @@ class Http
     /**
      * Create a get request to the given endpoint
      * @param $uri
-     * @param $payload
-     * @return ResponseInterface
+     * @param array $payload
+     * @return void
      * @throws GuzzleException
      */
-    public function get($uri, $payload)
+    public function get($uri, $payload = [])
     {
         try {
-            return $this->http->get($uri, $payload);
+            $this->response = $this->http->get($uri, $payload);
         } catch (GuzzleException $e) {
             throw $e;
         }
@@ -64,15 +64,23 @@ class Http
      * Create a patch request to the given endpoint
      * @param $uri
      * @param $payload
-     * @return ResponseInterface
      * @throws GuzzleException
      */
     public function patch($uri, $payload)
     {
         try {
-            return $this->http->patch($uri, $payload);
+            $this->response = $this->http->patch($uri, $payload);
         } catch (GuzzleException $e) {
             throw $e;
         }
+    }
+
+    /**
+     * Provide response in formatted array
+     * @return mixed
+     */
+    public function getResponse()
+    {
+        return json_decode($this->response->getBody()->getContents(), true, JSON_PRETTY_PRINT);
     }
 }

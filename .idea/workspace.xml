@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6750925b-d73e-4f32-884f-43c38c7f6a01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/HTTP/http.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTTP/http.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTTP/http.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTTP/Http.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CommentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CommentsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +126,7 @@
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Code/bots/telegram-send-money-bot" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -131,7 +134,7 @@
       <recent name="C:\Users\HP\PhpstormProjects\CommentsAPI\src\Exception" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.CommentsTest.testBaseUrlIsCorrect">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="CommentsTest.testBaseUrlIsCorrect" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testBaseUrlIsCorrect" scope="Method" />
       <method v="2" />
@@ -140,16 +143,14 @@
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testCreateComment" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CommentsTest.testFetchAllComments" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testFetchAllComments" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="CommentsTest.testFetchSingleComment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testFetchSingleComment" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CommentsTest.testGetHello" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testGetHello" scope="Method" />
+    <configuration name="Comments.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/Comments.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.CommentsTest.testBaseUrlIsCorrect" />
+        <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHPUnit.CommentsTest.testCreateComment" />
+        <item itemvalue="PHP Script.Comments.php" />
+        <item itemvalue="PHPUnit.CommentsTest.testBaseUrlIsCorrect" />
         <item itemvalue="PHPUnit.CommentsTest.testFetchSingleComment" />
-        <item itemvalue="PHPUnit.CommentsTest.testFetchAllComments" />
-        <item itemvalue="PHPUnit.CommentsTest.testGetHello" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +187,7 @@
       <workItem from="1600396374846" duration="3309000" />
       <workItem from="1600430032882" duration="1554000" />
       <workItem from="1600506647594" duration="17666000" />
-      <workItem from="1600759613369" duration="16477000" />
+      <workItem from="1600759613369" duration="23985000" />
     </task>
     <servers />
   </component>
@@ -206,10 +207,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="221" y="0" key="#CLI_Interpreters" timestamp="1600396650843">
+    <state x="221" y="0" key="#CLI_Interpreters" timestamp="1600910646813">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="221" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1600396650843" />
+    <state x="221" y="0" key="#CLI_Interpreters/0.0.1280.680@0.0.1280.680" timestamp="1600910646813" />
     <state x="351" y="0" key="#Dockerfile" timestamp="1600387071946">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -230,6 +231,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="246" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1600383759074" />
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600907341690">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1600907341690" />
     <state x="418" y="253" key="ComposerInitDialogKey" timestamp="1600391901719">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -238,42 +243,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600724086223" />
-    <state width="1237" height="265" key="GridCell.Tab.0.bottom" timestamp="1600770405771">
+    <state width="1237" height="215" key="GridCell.Tab.0.bottom" timestamp="1600912968504">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600770405771" />
-    <state width="1237" height="265" key="GridCell.Tab.0.center" timestamp="1600770405769">
+    <state width="1237" height="215" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600912968504" />
+    <state width="1237" height="215" key="GridCell.Tab.0.center" timestamp="1600912968503">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600770405769" />
-    <state width="1237" height="265" key="GridCell.Tab.0.left" timestamp="1600770405766">
+    <state width="1237" height="215" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600912968503" />
+    <state width="1237" height="215" key="GridCell.Tab.0.left" timestamp="1600912968503">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600770405766" />
-    <state width="1237" height="265" key="GridCell.Tab.0.right" timestamp="1600770405770">
+    <state width="1237" height="215" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600912968503" />
+    <state width="1237" height="215" key="GridCell.Tab.0.right" timestamp="1600912968504">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600770405770" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1600765144869">
+    <state width="1237" height="215" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600912968504" />
+    <state width="1237" height="162" key="GridCell.Tab.1.bottom" timestamp="1600909698470">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600765144869" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1600765144869">
+    <state width="1237" height="162" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600909698470" />
+    <state width="1237" height="162" key="GridCell.Tab.1.center" timestamp="1600909698470">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1600765144869" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1600765144869">
+    <state width="1237" height="162" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1600909698470" />
+    <state width="1237" height="162" key="GridCell.Tab.1.left" timestamp="1600909698469">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1600765144869" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1600765144869">
+    <state width="1237" height="162" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1600909698469" />
+    <state width="1237" height="162" key="GridCell.Tab.1.right" timestamp="1600909698470">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1600765144869" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1600430143283">
+    <state width="1237" height="162" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1600909698470" />
+    <state x="477" y="264" key="NewPhpFileDialog" timestamp="1600907309674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600430143283" />
+    <state x="477" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1600907309674" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1600910647723">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600910647723" />
     <state x="30" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1600389895851">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
