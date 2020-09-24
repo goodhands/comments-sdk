@@ -74,13 +74,14 @@ class Comments
     }
 
     /**
-     * @param $payload
+     * Find a single comment with the commentId
+     * @param $commentId
      * @return Http
      * @throws GuzzleException
      */
-    public function find($payload)
+    public function find($commentId)
     {
-        $this->http->get('comments/' . $payload);
+        $this->http->get('comments/' . $commentId);
 
         return $this->http;
     }

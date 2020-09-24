@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6750925b-d73e-4f32-884f-43c38c7f6a01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTTP/http.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTTP/Http.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CommentsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CommentsTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="6750925b-d73e-4f32-884f-43c38c7f6a01" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +129,7 @@
       <recent name="C:\Users\HP\PhpstormProjects\CommentsAPI\src\Exception" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.index.php">
+  <component name="RunManager" selected="PHPUnit.CommentsTest.testBaseUrlIsCorrect">
     <configuration name="CommentsTest.testBaseUrlIsCorrect" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testBaseUrlIsCorrect" scope="Method" />
       <method v="2" />
@@ -164,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.CommentsTest.testBaseUrlIsCorrect" />
+        <item itemvalue="PHPUnit.CommentsTest.testFetchSingleComment" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHPUnit.CommentsTest.testCreateComment" />
         <item itemvalue="PHP Script.Comments.php" />
-        <item itemvalue="PHPUnit.CommentsTest.testBaseUrlIsCorrect" />
-        <item itemvalue="PHPUnit.CommentsTest.testFetchSingleComment" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +182,7 @@
       <workItem from="1600396374846" duration="3309000" />
       <workItem from="1600430032882" duration="1554000" />
       <workItem from="1600506647594" duration="17666000" />
-      <workItem from="1600759613369" duration="23985000" />
+      <workItem from="1600759613369" duration="24375000" />
     </task>
     <servers />
   </component>
@@ -243,22 +238,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600724086223" />
-    <state width="1237" height="215" key="GridCell.Tab.0.bottom" timestamp="1600912968504">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1600913248084">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="215" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600912968504" />
-    <state width="1237" height="215" key="GridCell.Tab.0.center" timestamp="1600912968503">
+    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600913248084" />
+    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1600913248083">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="215" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600912968503" />
-    <state width="1237" height="215" key="GridCell.Tab.0.left" timestamp="1600912968503">
+    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600913248083" />
+    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1600913248082">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="215" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600912968503" />
-    <state width="1237" height="215" key="GridCell.Tab.0.right" timestamp="1600912968504">
+    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600913248082" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1600913248083">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="215" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600912968504" />
+    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600913248083" />
     <state width="1237" height="162" key="GridCell.Tab.1.bottom" timestamp="1600909698470">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
