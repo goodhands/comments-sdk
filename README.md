@@ -8,7 +8,7 @@
 [![Coverage Status][badge-coverage]][coverage]
 [![Total Downloads][badge-downloads]][downloads]
 
-A simple PHP library to use the comments microservice at https://comments.microapi.dev
+An easy to use PHP library to interface with the comments microservice at https://comments.microapi.dev as a microservice for your applications.
 
 This project adheres to a [Contributor Code of Conduct][conduct]. By
 participating in this project and its community, you are expected to uphold this
