@@ -89,13 +89,19 @@ class Comments
     /**
      * Update a comment's content
      * @param string $commentId
-     * @param array<string, string> $payload
+     * @param string $ownerId
+     * @param string $content
      * @throws GuzzleException
      * @return Http
      */
-    public function update(string $commentId, array $payload)
+    public function update(string $commentId, string $ownerId, string $content)
     {
-        $this->http->patch('comments/' . $commentId, $payload);
+        $this->http->patch('comments/' . $commentId, [
+            "body" => json_encode([
+                "content" => $content,
+                "ownerId" => $ownerId
+            ])
+        ]);
 
         return $this->http;
     }
@@ -116,13 +122,35 @@ class Comments
     /**
      * Update the flag status of a comment
      * @param string $commentId
-     * @param array $payload
+     * @param string $ownerId
      * @return Http
      * @throws GuzzleException
      */
-    public function flag(string $commentId, array $payload)
+    public function flag(string $commentId, $ownerId)
     {
-        $this->http->patch('comments/' . $commentId . '/flag', $payload);
+        $this->http->patch('comments/' . $commentId . '/flag', [
+            "body" => json_encode([
+                "ownerId" => $ownerId
+            ])
+        ]);
+
+        return $this->http;
+    }
+
+    /**
+     * Get votes count for a comment depending on the type specified
+     * @param string $commentId
+     * @param string $voteType
+     * @return Http
+     * @throws GuzzleException
+     */
+    public function votes(string $commentId, ?string $voteType = null)
+    {
+        $this->http->get('comments/' . $commentId . '/votes', [
+            "query" => [
+                "voteType" => $voteType
+            ]
+        ]);
 
         return $this->http;
     }
