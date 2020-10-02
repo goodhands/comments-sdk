@@ -12,7 +12,7 @@
 
 declare(strict_types=1);
 
-namespace Goodhands\Comments\Models;
+namespace Goodhands\Comments\Traits;
 
 /**
  * Class Replies
@@ -20,7 +20,7 @@ namespace Goodhands\Comments\Models;
  * @package Goodhands\Comments
  * Handle all replies to comments actions
  */
-class Replies
+trait Replies
 {
     public function get(): string
     {

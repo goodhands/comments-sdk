@@ -2,7 +2,9 @@
   <dictionary name="HP">
     <words>
       <w>codesniffer</w>
+      <w>downvote</w>
       <w>squizlabs</w>
+      <w>upvote</w>
     </words>
   </dictionary>
 </component>

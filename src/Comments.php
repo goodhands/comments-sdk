@@ -15,6 +15,8 @@ declare(strict_types=1);
 namespace Goodhands\Comments;
 
 use Goodhands\Comments\Exceptions\CommentsException;
+use Goodhands\Comments\Traits\Replies;
+use Goodhands\Comments\Traits\Votes;
 use GuzzleHttp\Exception\GuzzleException;
 use Goodhands\Comments\HTTP\Http;
 
@@ -23,16 +25,22 @@ use Goodhands\Comments\HTTP\Http;
  */
 class Comments
 {
+    use Votes;
+    use Replies;
+
     public const BASE_URL = "https://comment.microapi.dev/v1/";
+    private string $ACCESS_TOKEN;
 
     private Http $http;
 
     public function __construct($ACCESS_TOKEN)
     {
+        $this->ACCESS_TOKEN = $ACCESS_TOKEN;
+
         $this->http = new Http([
             'base_uri' => self::BASE_URL,
             'headers' => [
-                'Authorization' => 'Bearer ' . $ACCESS_TOKEN,
+                'Authorization' => 'Bearer ' . $this->ACCESS_TOKEN,
                 'Content-Type' => 'application/json'
             ]
         ]);
