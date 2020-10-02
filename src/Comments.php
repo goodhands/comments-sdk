@@ -89,13 +89,13 @@ class Comments
     /**
      * Update a comment's content
      * @param string $commentId
-     * @param array $content
+     * @param array<string, string> $payload
      * @throws GuzzleException
      * @return Http
      */
-    public function update(string $commentId, array $content)
+    public function update(string $commentId, array $payload)
     {
-        $this->http->patch('comments/' . $commentId, $content);
+        $this->http->patch('comments/' . $commentId, $payload);
 
         return $this->http;
     }
@@ -109,6 +109,20 @@ class Comments
     public function delete(string $commentId)
     {
         $this->http->delete('comments/' . $commentId);
+
+        return $this->http;
+    }
+
+    /**
+     * Update the flag status of a comment
+     * @param string $commentId
+     * @param array $payload
+     * @return Http
+     * @throws GuzzleException
+     */
+    public function flag(string $commentId, array $payload)
+    {
+        $this->http->patch('comments/' . $commentId . '/flag', $payload);
 
         return $this->http;
     }
