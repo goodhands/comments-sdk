@@ -85,4 +85,17 @@ class Comments
 
         return $this->http;
     }
+
+    /**
+     * Update a comment's content
+     * @param string $commentId
+     * @param array $content
+     * @throws GuzzleException
+     */
+    public function update(string $commentId, array $content)
+    {
+        $this->http->patch('comments/' . $commentId, $content);
+
+        return $this->http;
+    }
 }

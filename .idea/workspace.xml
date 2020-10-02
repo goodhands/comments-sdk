@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6750925b-d73e-4f32-884f-43c38c7f6a01" name="Default Changelist" comment="" />
+    <list default="true" id="6750925b-d73e-4f32-884f-43c38c7f6a01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comments.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +123,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Code/bots/telegram-send-money-bot" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Code/expenseng" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
@@ -129,7 +133,12 @@
       <recent name="C:\Users\HP\PhpstormProjects\CommentsAPI\src\Exception" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.CommentsTest.testBaseUrlIsCorrect">
+  <component name="RunManager" selected="Composer Script.phpunit-coverage">
+    <configuration name="phpunit-coverage" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <option name="script" value="phpunit-coverage" />
+      <method v="2" />
+    </configuration>
     <configuration name="CommentsTest.testBaseUrlIsCorrect" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testBaseUrlIsCorrect" scope="Method" />
       <method v="2" />
@@ -140,9 +149,6 @@
     </configuration>
     <configuration name="CommentsTest.testFetchSingleComment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testFetchSingleComment" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Comments.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/Comments.php">
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
@@ -159,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Composer Script.phpunit-coverage" />
         <item itemvalue="PHPUnit.CommentsTest.testBaseUrlIsCorrect" />
         <item itemvalue="PHPUnit.CommentsTest.testFetchSingleComment" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHPUnit.CommentsTest.testCreateComment" />
-        <item itemvalue="PHP Script.Comments.php" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +188,10 @@
       <workItem from="1600396374846" duration="3309000" />
       <workItem from="1600430032882" duration="1554000" />
       <workItem from="1600506647594" duration="17666000" />
-      <workItem from="1600759613369" duration="24375000" />
+      <workItem from="1600759613369" duration="27948000" />
+      <workItem from="1601414287629" duration="616000" />
+      <workItem from="1601495494297" duration="594000" />
+      <workItem from="1601630177149" duration="714000" />
     </task>
     <servers />
   </component>
@@ -234,42 +243,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="418" y="253" key="ComposerInitDialogKey/0.0.1280.680@0.0.1280.680" timestamp="1600391901719" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1600724086223">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1600990432341">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600724086223" />
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom" timestamp="1600913248084">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600990432341" />
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1600994262860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600913248084" />
-    <state width="1237" height="166" key="GridCell.Tab.0.center" timestamp="1600913248083">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
+    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1600994262860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600913248083" />
-    <state width="1237" height="166" key="GridCell.Tab.0.left" timestamp="1600913248082">
+    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
+    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1600994262859">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600913248082" />
-    <state width="1237" height="166" key="GridCell.Tab.0.right" timestamp="1600913248083">
+    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600994262859" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1600994262860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600913248083" />
-    <state width="1237" height="162" key="GridCell.Tab.1.bottom" timestamp="1600909698470">
+    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
+    <state width="1237" height="162" key="GridCell.Tab.1.bottom" timestamp="1600994262861">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600909698470" />
-    <state width="1237" height="162" key="GridCell.Tab.1.center" timestamp="1600909698470">
+    <state width="1237" height="162" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600994262861" />
+    <state width="1237" height="162" key="GridCell.Tab.1.center" timestamp="1600994262861">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1600909698470" />
-    <state width="1237" height="162" key="GridCell.Tab.1.left" timestamp="1600909698469">
+    <state width="1237" height="162" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1600994262861" />
+    <state width="1237" height="162" key="GridCell.Tab.1.left" timestamp="1600994262860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1600909698469" />
-    <state width="1237" height="162" key="GridCell.Tab.1.right" timestamp="1600909698470">
+    <state width="1237" height="162" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
+    <state width="1237" height="162" key="GridCell.Tab.1.right" timestamp="1600994262861">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1600909698470" />
+    <state width="1237" height="162" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1600994262861" />
     <state x="477" y="264" key="NewPhpFileDialog" timestamp="1600907309674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
