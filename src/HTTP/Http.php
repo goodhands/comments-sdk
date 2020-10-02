@@ -76,6 +76,20 @@ class Http
     }
 
     /**
+     * Delete a resource
+     * @param $uri
+     * @throws GuzzleException
+     */
+    public function delete($uri)
+    {
+        try {
+            $this->response = $this->http->delete($uri);
+        } catch (GuzzleException $e) {
+            throw $e;
+        }
+    }
+
+    /**
      * Provide response in formatted array
      * @return mixed
      */

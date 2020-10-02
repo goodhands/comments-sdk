@@ -91,10 +91,24 @@ class Comments
      * @param string $commentId
      * @param array $content
      * @throws GuzzleException
+     * @return Http
      */
     public function update(string $commentId, array $content)
     {
         $this->http->patch('comments/' . $commentId, $content);
+
+        return $this->http;
+    }
+
+    /***
+     * Delete a comment
+     * @param string $commentId
+     * @return Http
+     * @throws GuzzleException
+     */
+    public function delete(string $commentId)
+    {
+        $this->http->delete('comments/' . $commentId);
 
         return $this->http;
     }
