@@ -91,7 +91,7 @@ class Comments
     {
         $this->http->get('comments/' . $commentId);
 
-        return $this->http;
+        return $this->http->getResponse();
     }
 
     /**
