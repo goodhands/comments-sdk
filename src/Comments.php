@@ -144,22 +144,4 @@ class Comments
 
         return $this->http;
     }
-
-    /**
-     * Get votes count for a comment depending on the type specified
-     * @param string $commentId
-     * @param string $voteType
-     * @return Http
-     * @throws GuzzleException
-     */
-    public function votes(string $commentId, ?string $voteType = null)
-    {
-        $this->http->get('comments/' . $commentId . '/votes', [
-            "query" => [
-                "voteType" => $voteType
-            ]
-        ]);
-
-        return $this->http;
-    }
 }

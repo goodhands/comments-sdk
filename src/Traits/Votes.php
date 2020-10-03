@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace Goodhands\Comments\Traits;
 
+use Goodhands\Comments\Comments;
 use Goodhands\Comments\HTTP\Http;
 use GuzzleHttp\Exception\GuzzleException;
 
@@ -74,5 +75,25 @@ trait Votes
     public function downvote(string $commentId, string $ownerId)
     {
         return $this->vote('downvote', $ownerId, $commentId);
+    }
+
+    /**
+     * Get votes count for a comment depending on the type specified
+     * @param string $commentId
+     * @param string $voteType
+     * @return Http
+     * @throws GuzzleException
+     */
+    public function votes(string $commentId, ?string $voteType = null)
+    {
+        $http = $this->http();
+
+        $http->get('comments/' . $commentId . '/votes', [
+            "query" => [
+                "voteType" => $voteType
+            ]
+        ]);
+
+        return $http->getResponse();
     }
 }
