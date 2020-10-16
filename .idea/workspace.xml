@@ -22,6 +22,7 @@
     <list default="true" id="6750925b-d73e-4f32-884f-43c38c7f6a01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/Votes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Votes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +133,7 @@
       <recent name="C:\Users\HP\PhpstormProjects\CommentsAPI\src\Exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Composer Script.phpunit-coverage">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="phpunit-coverage" type="ComposerRunConfigurationType" factoryName="Composer Script" temporary="true">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
       <option name="script" value="phpunit-coverage" />
@@ -142,12 +143,11 @@
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testBaseUrlIsCorrect" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CommentsTest.testCreateComment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testCreateComment" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="CommentsTest.testFetchSingleComment" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Goodhands\Comments\Test\CommentsTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/CommentsTest.php" method="testFetchSingleComment" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Votes.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/Traits/Votes.php">
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
@@ -164,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="PHP Script.Votes.php" />
         <item itemvalue="Composer Script.phpunit-coverage" />
         <item itemvalue="PHPUnit.CommentsTest.testBaseUrlIsCorrect" />
         <item itemvalue="PHPUnit.CommentsTest.testFetchSingleComment" />
-        <item itemvalue="PHP Script.index.php" />
-        <item itemvalue="PHPUnit.CommentsTest.testCreateComment" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +190,10 @@
       <workItem from="1600759613369" duration="27948000" />
       <workItem from="1601414287629" duration="616000" />
       <workItem from="1601495494297" duration="594000" />
-      <workItem from="1601630177149" duration="2711000" />
+      <workItem from="1601630177149" duration="12262000" />
+      <workItem from="1602148229198" duration="50000" />
+      <workItem from="1602795133360" duration="706000" />
+      <workItem from="1602798286924" duration="1177000" />
     </task>
     <servers />
   </component>
@@ -246,38 +249,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600990432341" />
-    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1600994262860">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom" timestamp="1601766352860">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
-    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1600994262860">
+    <state width="1237" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601766352860" />
+    <state width="1237" height="162" key="GridCell.Tab.0.center" timestamp="1601766352857">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
-    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1600994262859">
+    <state width="1237" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1601766352857" />
+    <state width="1237" height="162" key="GridCell.Tab.0.left" timestamp="1601766352855">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600994262859" />
-    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1600994262860">
+    <state width="1237" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1601766352855" />
+    <state width="1237" height="162" key="GridCell.Tab.0.right" timestamp="1601766352859">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
-    <state width="1237" height="162" key="GridCell.Tab.1.bottom" timestamp="1600994262861">
+    <state width="1237" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1601766352859" />
+    <state width="1237" height="162" key="GridCell.Tab.1.bottom" timestamp="1601766352864">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600994262861" />
-    <state width="1237" height="162" key="GridCell.Tab.1.center" timestamp="1600994262861">
+    <state width="1237" height="162" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1601766352864" />
+    <state width="1237" height="162" key="GridCell.Tab.1.center" timestamp="1601766352863">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1600994262861" />
-    <state width="1237" height="162" key="GridCell.Tab.1.left" timestamp="1600994262860">
+    <state width="1237" height="162" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1601766352862" />
+    <state width="1237" height="162" key="GridCell.Tab.1.left" timestamp="1601766352861">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1600994262860" />
-    <state width="1237" height="162" key="GridCell.Tab.1.right" timestamp="1600994262861">
+    <state width="1237" height="162" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1601766352861" />
+    <state width="1237" height="162" key="GridCell.Tab.1.right" timestamp="1601766352864">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="162" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1600994262861" />
+    <state width="1237" height="162" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1601766352864" />
+    <state x="401" y="64" key="NewPhpClassDialog" timestamp="1601633295407">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="401" y="64" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1601633295407" />
     <state x="477" y="264" key="NewPhpFileDialog" timestamp="1600907309674">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -298,10 +305,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="347" y="44" width="587" height="592" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1600385910778" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1600903907069">
+    <state x="297" y="151" key="run.anything.popup" timestamp="1601760727253">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1600903907069" />
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1601760727253" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1600537929025">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
