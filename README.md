@@ -1,4 +1,4 @@
-# goodhands/comments-sdk
+# goodhands/microapi-comments-sdk
 
 [![Source Code][badge-source]][source]
 [![Latest Version][badge-release]][packagist]
